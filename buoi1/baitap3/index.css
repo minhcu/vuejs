@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+.view {
+    width: 1000px;
+    margin: auto;
+}
+.header {
+    background-color: #5597b4;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon {
+    background-color: #4987a1;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 0 1px black;
+    cursor: pointer;
+}
+.active {
+    background-color: #e35885;
+}
+.container {
+    padding: 20px 100px;
+}
+/* List CSS */
+.list .item {
+    display: flex;
+}
+.list .title {
+    font-weight: 700;
+    margin: 0;
+}
+.list .image {
+    width: 300px;
+    height: auto;
+}
+.list .image img {
+    width: inherit;
+    object-fit: cover;
+}
+.list .margin {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/* Grid CSS */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.grid .title {
+    display: none;
+}
+.grid .image {
+    width: 100%;
+    height: auto;
+}
+.grid .image img {
+    width: inherit;
+    object-fit: fill;
+}

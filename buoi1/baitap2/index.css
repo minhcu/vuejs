@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+.services {
+    width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: #5597b4;
+}
+.services__title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.item-list {
+    max-width: 500px;
+    margin: auto;
+}
+.item-box {
+    background-color: #e35885;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    font-size: 24px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+}
+.active {
+    background-color: #8ec16d;
+}
+.item-name {
+    width: 70%;
+}
+.item-price {
+    width: 30%;
+    text-align: center;
+}
+.total-box {
+    display: flex;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    font-size: 24px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid white;
+}

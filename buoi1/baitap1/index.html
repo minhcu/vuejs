@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/buoi1/baitap1/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div class="nav__container" id="nav">
+        <div
+            class="nav"
+            v-for="item in arr"
+            v-bind:class="[item.active ? 'active' : '']"
+            v-on:click="active(item)">
+            {{ item.text }}
+        </div>
+    </div>
+    <div class="show-active" id="show">
+        You're choosing
+        <span class="nav nav-item" id="test"></span>
+    </div>
+    <script src="/buoi1/baitap1/index.js"></script>
+</body>
+</html>
