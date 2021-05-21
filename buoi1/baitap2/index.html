@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/buoi1/baitap2/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div class="services" id="services">
+        <h2 class="services__title">Services</h2>
+        <div class="item-list">
+            <div
+                class="item-box"
+                v-for="item in arr"
+                v-bind:class="[item.active ? 'active' : '']"
+                v-on:click="addItem(item)"
+            >
+                 <div class="item-name">
+                     {{ item.name }}
+                 </div>
+                 <div class="item-price">
+                    {{ '$' + item.price }}
+                 </div>
+            </div>
+            <div class="total-box">
+                <div class="item-name total">
+                    Total
+                </div>
+                <div class="item-price total" id="total">
+                    $0
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/buoi1/baitap2/index.js"></script>
+</body>
+</html>

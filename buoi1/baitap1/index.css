@@ -1,0 +1,25 @@
+.nav__container {
+    display: flex;
+    width: 700px;
+    margin: auto;
+}
+.nav {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #5597b4;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.active {
+    background-color: #e35885;
+}
+.show-active {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 10px;
+    font-size: 30px;
+}
